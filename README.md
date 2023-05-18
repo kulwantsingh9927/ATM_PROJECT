@@ -1,4 +1,4 @@
-# ATM_MACHINE_MANAGEMENT_PROJECT
+# ATM-Management-System
 ## A Java swing mini project.
 #### To run this program you must have the files Account.java, ATM.java, ConsoleReader.java, Customer.java, p1.java, and Sav_Acct.java all in your working directory.
  
@@ -52,19 +52,16 @@
  +	c)Transaction Report
  +	d)Customer Accounts
  +	e)Exit ADMIN
- LoginFrame: is a simple frame that prompts a user for customer ID and PIN number(both must be created) 
 
 1.LoginFrame: is a simple frame that prompts a user for customer ID and PIN number(both must be created) 
 	login: assuming both the ID and PIN entered exist you will jump to the SelectFrame
 	register: jumps to Register frame where the user is prompted for a new customer account
 	exit: This exits the program
 
-RegisterFrame: a frame that prompts a user for a desired name and associated PIN number
 2.RegisterFrame: a frame that prompts a user for a desired name and associated PIN number
 	accept: this will create a customer and return a customer ID number assuming name and PIN are acceptable
 	back: This just jumps to the LoginFrame (no action taken)
 
-SelectionFrame: This is the main hub of the project. Here all choices are given to the user for account uses
 3.SelectionFrame: This is the main hub of the project. Here all choices are given to the user for account uses
 	Open Account: This Choice will add an account object to an existing customer object and add it to a corresponding ArrayList
 	Deposit: This Choice will add funds to a Customer objects specific account that is selected by the user
@@ -74,28 +71,22 @@ SelectionFrame: This is the main hub of the project. Here all choices are given 
 	Close Account: This choice will close an account for a given Customer
 	Exit ATM: returns to the LoginFrame
 
-AddAccountFrame: This is where the user selects the type of account they want to add
 4.AddAccountFrame: This is where the user selects the type of account they want to add
 	savings account: Adds an account object to their customer object with 5% interest
 	checking account: Adds an account object to their customer object with 0% interest
 
-DepositFrame: This is where the user adds money to their desired account
 5.DepositFrame: This is where the user adds money to their desired account
 	Make Deposit: Assuming a number amount is in "desired amount" and an account is selected the desired amount will be added to their balance
 
-WithdrawFrame:This is where the user removes money from their desired account
 6.WithdrawFrame:This is where the user removes money from their desired account
 	Make Deposit: Assuming a number amount is in "desired amount" and an account is selected the desired amount will be subtracted from their balance
 
-TransferFrame: This is where the user takes money from an account and adds it too another (can add too any existing acount)
 7.TransferFrame: This is where the user takes money from an account and adds it too another (can add too any existing acount)
 	Make Transfer: Assuming a desired amount exists and to and from accounts are selected this will complete the transaction
 
-InfoFrame: This will display all of the users accounts and shows a log of all their transactions
 8.InfoFrame: This will display all of the users accounts and shows a log of all their transactions
 	return: simply goes back to the SelectionFrame
 
-CloseFrame: This will set the selected account to inactive
 9.CloseFrame: This will set the selected account to inactive
 	close account: closes the selected account
 
@@ -108,10 +99,14 @@ Admin has a pin requirement which is hard coded at "abcd" and will open a menu
 2) Show accounts order by highest balance
 3) Show accounts belonging to the same customer
 4) Show transaction log of all customers in descending order
+
 Show accounts order by customer name:
 This runs a sorting algorithm that prints out all the accounts information sorted by name
+
 Show accounts order by highest balance:
 This runs a sorting algorithm that prints out all the accounts information sorted by balance
+
 Show accounts belonging to the same customer:
 This runs a sorting algorithm that prints out the accounts information sorted by account number for a selected customer
 Status API Training Shop Blog About
+
